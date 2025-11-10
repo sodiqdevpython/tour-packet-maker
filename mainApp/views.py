@@ -67,7 +67,7 @@ Talablar:
 4. `trip_summary.estimated_total_cost_usd` — barcha kunlardagi `total_cost_day_usd` yig‘indisidan oshmasin.
 ---
 **Qo‘shimcha qoidalar:**
-- Har kuni `schedule` ichida 4-6 ta faoliyat bo‘lsin.
+- Har kuni `schedule` ichida kamida 4-6 ta faoliyat bo‘lsin undan kam bo'lmasin.
 - Har bir `activity` haqida qisqa, lekin jonli va foydali tavsif yozing (nimani ko‘radi, nimasi mashhur, nimaga arziydi).
 - Agar `budget_usd` juda past (< 10$) bo‘lsa, VR yoki virtual sayohatlarni tavsiya qil, va ular har doim **tekin (cost_usd = 0)** bo‘ladi.
 - Agar `is_disabled = true` bo‘lsa, kirish oson joylar, pandusli joylar yoki VR tajribalarga e’tibor ber.
