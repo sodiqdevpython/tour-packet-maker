@@ -121,6 +121,13 @@ Nurbuloq dam olish zonasi
 Chashma buloqlar (Urgut, Jomboy tumanlarida)
 Kattaqo‘rg‘on suv ombori (tabiat va baliq ovlash)
 va boshqalar
+
+Eng asosiy shartlar: 
+1.budget_usd to'g'ri kelsin yetmay qoladigan vaziyatni aytma
+2.month sayohat oyiga moslab tour paket tuzib ber
+3.group_type ga ham juda mos qilib ber tour paketni
+4.Doim eng mashxur joylarni tavsiya qilaverma Registon maydoni Go‘ri Amir maqbarasi kabi joylarni asosan yoshi kattalarga maslahat berasan yosh bo'lsa ularni doim maslahat berma unchalik ham mashxur bo'lmagan joylarni ham maslahat beraver bemalol va oxirida notes ni ham month uchun munosib javob ber
+5.Agar yoshlar bo'lsa ko'proq aylanish uchun joylar bo'lsin ularga tarixiy joylar qiziq emas yoshi kattalar 50+ yoshlar bo'lsa unda tarixiy joylarni maslahat berasan
 """
 
 class TravelAPIView(APIView):
@@ -150,7 +157,7 @@ class TravelAPIView(APIView):
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.7,
+                temperature=0.9,
                 max_tokens=2000,
             )
             content = response.choices[0].message.content.strip()
